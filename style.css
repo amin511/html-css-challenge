@@ -1,0 +1,178 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+section{
+    text-align: center;
+    position: relative;
+    background-color: rgba(47, 36, 51, 0.747);
+    width: 100%;
+    height: 100vh;
+    padding-top: 300px;
+}
+
+
+    /* nav style  */
+nav > ul{
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type:none;
+    background-color: rgb(181, 126, 233);
+}
+nav ul li{
+    background-color: rgb(223, 70, 221);
+    padding: 10px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+    /* end nav style */
+
+    /* house style */
+.house{
+    
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border-left:50px ;
+    border-bottom: 130px solid rgb(122, 31, 31);;
+    border-left:150px solid transparent ;
+    border-right: 150px solid transparent;  
+
+}
+.square{
+    width: 230px;
+    height: 130px;
+    background-color: rgb(243, 240, 240);
+    margin-top: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.window{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.porte{
+    top: 20px;
+    height: 100px;
+    width: 60px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+    /* end house style  */
+
+    /* snowman style */
+.snowman{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.circle{
+    border-radius: 50%;
+    background-color: rgb(249, 243, 243);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.circle1{
+    width: 100px;
+    height: 100px;
+    transform: translate(0);
+    position: relative;
+}
+.circle2{
+    width: 150px;
+    height: 150px;
+    transform: translate(0 , -20px);
+}
+.circle3{
+    width: 200px ;
+    height: 200px;
+    transform: translate(0 , -50px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.eye{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+.eye:last-child{
+    left: 20px;
+}
+    /* end snowman style  */
+
+    /* heart style  */
+.heart{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform: rotate(45deg);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    scale: 200%;
+}
+
+.heart::after{
+    content: "";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    background-color: red ;
+    border-radius: 50%;
+}
+.heart::before{
+    content: "";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 50px;
+    border-radius: 50%;
+    background-color: red;         
+}
+    /* end heart style */
+
+.pentagon{
+    height: 400px;
+    width: 400px;
+    background-color: blue;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    margin: auto;
+    
+}
+.heart , .house , .snowman{
+    scale: 200%;
+}
+
